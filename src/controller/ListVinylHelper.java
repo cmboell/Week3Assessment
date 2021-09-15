@@ -35,7 +35,7 @@ public class ListVinylHelper {
 		TypedQuery<ListVinyl>typedQuery = em.createQuery("select lv from ListVinyl lv where lv.artist = :selectedArtist and lv.album = :selectedAlbum and lv.color = :selectedColor",ListVinyl.class);
 		//substitute parameter with actual data from the toDelete item
 		typedQuery.setParameter("selectedArtist",toDelete.getArtist());
-		typedQuery.setParameter("selectedAlbum",toDelete.getArtist());
+		typedQuery.setParameter("selectedAlbum",toDelete.getAlbum());
 		typedQuery.setParameter("selectedColor",toDelete.getColor());
 		// only want one result
 		typedQuery.setMaxResults(1);

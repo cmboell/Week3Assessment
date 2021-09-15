@@ -115,7 +115,8 @@ public class StartProgram {
 			System.out.println("*  5 -- Exit the collection");
 			System.out.print("Enter Selection: ");
 			int selection = in.nextInt();
-			in.nextLine();
+
+in.nextLine();
 
 			if (selection == 1) {
 				addAVinyl();
